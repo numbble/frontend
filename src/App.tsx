@@ -8,7 +8,7 @@ import {
   ContentsEdit,
   KakaoRedirectHandler,
   LoginModal,
-  PrivateRoute,
+  PrivateRoute
 } from 'components';
 import {
   AdminUserPage,
@@ -25,7 +25,9 @@ import {
   LoginPage,
   FollowPage,
   PlayPage,
-  NotificationPage
+  NotificationPage,
+  ProfileEditPage,
+  NewProfilePage
 } from 'pages';
 
 function App() {
@@ -52,6 +54,8 @@ function App() {
           <Route path="/" element={<PrivateRoute />}>
             <Route path="/upload" element={<VideoUploadPage />} />
             <Route path="/onboard" element={<OnBoardingPage />} />
+            <Route path="/onboard/profile" element={<NewProfilePage />} />
+            <Route path="/profile/edit" element={<ProfileEditPage />} />
             <Route path="/chat/:id" element={<ChatRoomPage />} />
             <Route path="/admin" element={<AdminLayout />}>
               <Route path="contents" element={<AdminContentPage />} />
