@@ -4,7 +4,7 @@ import { fetcherWithToken } from 'utils/swr';
 import { IUserData } from 'types';
 import { AppContainer, ProfileInputs } from 'components';
 import { useProfileForm } from 'hooks/useProfileForm';
-import { Button, Buttons, Header } from 'pages/Onboard/OnBoardingPage/styles';
+import { Button, Buttons, Header } from 'pages/OnBoard/OnBoardingPage/styles';
 import { Link } from 'react-router-dom';
 import * as S from './styles';
 
